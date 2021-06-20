@@ -23,5 +23,17 @@ $(document).ready(function () {
     $("#product-img").show();
     $("#product-info").hide();
   });
-
+  $("#submit").click(function () {
+    var name = document.getElementById("nameInput").value;
+    var email = document.getElementById("emailInput").value;
+    var message = document.getElementById("messageInput").value;
+    if (name == "" || email == "" || message == "") {
+      alert("Please input all your information.");
+    } else {
+      alert(
+        name +
+          " we have received your message. Thank you for reaching out to us."
+      );
+    }
+  });
 });

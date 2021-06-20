@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
-
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -42,7 +41,16 @@
                 </p>
               </div>
 
-              <img src="images/mouse_click.png" />
+              <div
+                class="
+                  d-flex
+                  align-items-center
+                  justify-content-space-around
+                  flex-column
+                "
+              >
+                <img src="images/mouse_click.png" />
+              </div>
             </div>
           </div>
         </div>
@@ -77,6 +85,7 @@
       style="
         background-image: url('images/backgrounds/s_image.jpg');
         background-size: cover;
+        height: auto;
       "
       class="text-white"
     >
@@ -242,6 +251,7 @@
                 class="form-control m-2"
                 type="text"
                 placeholder="Name..."
+                id="nameInput"
               />
             </div>
             <div class="col-md-6 text-center align-center">
@@ -249,6 +259,7 @@
                 class="form-control m-2"
                 type="text"
                 placeholder="Email..."
+                id="emailInput"
               />
             </div>
           </div>
@@ -259,12 +270,17 @@
                 type="text"
                 rows="7"
                 placeholder="Your message here..."
+                id="messageInput"
               ></textarea>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 text-center align-center">
-              <button type="button" class="btn btn-primary btn-lg mt-5">
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg mt-5"
+                id="submit"
+              >
                 Submit
               </button>
             </div>
