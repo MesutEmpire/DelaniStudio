@@ -23,4 +23,5 @@ $(document).ready(function () {
     $("#product-img").show();
     $("#product-info").hide();
   });
+
 });
