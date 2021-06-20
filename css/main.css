@@ -5,3 +5,12 @@ input[type="text"] {
 textarea[type="text"] {
   background-color: transparent;
 }
+#design-info {
+  display: none;
+}
+#development-info {
+  display: none;
+}
+#product-info {
+  display: none;
+}
